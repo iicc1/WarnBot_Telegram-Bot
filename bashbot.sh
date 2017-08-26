@@ -37,24 +37,6 @@ INLINE_QUERY=$URL'/answerInlineQuery'
 ME_URL=$URL'/getMe'
 ME=$(curl -s $ME_URL | ./JSON.sh/JSON.sh -s | egrep '\["result","username"\]' | cut -f 2 | cut -d '"' -f 2)
 
-EMOJIPRECIO=`cat emojis/emojiprecio`
-EMOJIGRAFICA=`cat emojis/emojigrafica`
-EMOJIROM=`cat emojis/emojirom`
-EMOJIEX=`cat emojis/emojiex`
-EMOJIPERSONA=`cat emojis/emojipersona`
-EMOJIENLACE=`cat emojis/emojienlace`
-EMOJINOMBRE=`cat emojis/emojinombre`
-EMOJIASIN=`cat emojis/emojiasin`
-EMOJIESP=`cat emojis/emojistpana`
-EMOJIFR=`cat emojis/emojifrancia`
-EMOJIGER=`cat emojis/emojialem`	
-EMOJIUK='🇬🇧'
-EMOJILIB=`cat emojis/emojilib`
-EMOJICO=`cat emojis/emojico`
-EMOJIPLUS=`cat emojis/emojiplus`
-EMOJIIT='🇮🇹'
-EVISTO=`cat emojis/emojicohete`
-
 FILE_URL='https://api.telegram.org/file/bot'$TOKEN'/'
 UPD_URL=$URL'/getUpdates?offset='
 GET_URL=$URL'/getFile'
